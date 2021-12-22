@@ -1,10 +1,11 @@
 {
-  "name": "Rakamin-Mini-Project",
+  "name": "rakamin-mini-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test jest --coverage --runInBand --detectOpenHandles --forceExit",
+    "dev": "NODE_ENV=development nodemon bin/www"
   },
   "repository": {
     "type": "git",
